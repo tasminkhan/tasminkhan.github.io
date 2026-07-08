@@ -19,6 +19,10 @@ images:
   .card-list swiper-container { width: 100%; }
   .card-list swiper-slide img { width: 100%; height: 260px; object-fit: contain; }
   .card-list .meta { opacity: .75; font-size: .9rem; margin-bottom: .2rem; }
+  .card-list .links { margin-top: .8rem; }
+  .card-list .links a { display: inline-block; margin-right: .5rem; padding: .25rem .7rem; border: 1px solid currentColor; border-radius: .35rem; font-size: .85rem; text-decoration: none; }
+  .card-list .links a:hover { opacity: .7; }
+  .card-list .tag-ongoing { display: inline-block; padding: .22rem .6rem; border-radius: .35rem; font-size: .8rem; font-weight: 600; background: #e0a800; color: #000; }
 </style>
 
 <div class="card-list">
@@ -48,6 +52,13 @@ images:
       <ul class="mb-0 mt-2">
         {% for h in project.highlights %}<li>{{ h }}</li>{% endfor %}
       </ul>
+      {% endif %}
+      {% if project.github or project.presentation or project.ongoing %}
+      <div class="links">
+        {% if project.github %}<a href="{{ project.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
+        {% if project.presentation %}<a href="{{ project.presentation }}" target="_blank" rel="noopener noreferrer">View Presentation</a>{% endif %}
+        {% if project.ongoing %}<span class="tag-ongoing">Ongoing</span>{% endif %}
+      </div>
       {% endif %}
     </div>
   </div>

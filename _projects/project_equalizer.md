@@ -9,5 +9,5 @@ slides:
   - assets/img/projects/equalizer/thumbnail.png
   - assets/img/projects/equalizer/frequency-analysis.png
   - assets/img/projects/equalizer/schematic.png
-# github: # TODO: add repository link later
+github: https://github.com/tasminkhan/Three-Band-Hardware-Digital-Equalizer-with-Biquad-IIR-Filter
 ---

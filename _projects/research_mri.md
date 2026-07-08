@@ -1,7 +1,9 @@
 ---
 title: Deep Learning for MRI QSM with Magnetic Anisotropy
 category: research
-importance: 2
+importance: 3
+# Presentation (.pptx in a GitHub repo) opened in-browser via the MS Office viewer:
+presentation: "https://view.officeapps.live.com/op/view.aspx?src=https://raw.githubusercontent.com/tasminkhan/QSM-deep-learning-exploration/main/presentations/4_thesis%20presentation.pptx"
 meta:
   - "Undergraduate Thesis"
   - "Supervisor: Dr. Maruf Ahmed, Assistant Professor, EEE, BUET"

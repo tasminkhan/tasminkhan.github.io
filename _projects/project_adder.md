@@ -9,5 +9,5 @@ slides:
   - assets/img/projects/adder/thumbnail.png
   - assets/img/projects/adder/coverage-curves.png
   - assets/img/projects/adder/schematic.png
-# github: # TODO: add repository link later
+github: https://github.com/tasminkhan/16-bit-Ripple-Carry-Adder-with-layered-testbench-and-layout
 ---

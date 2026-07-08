@@ -1,7 +1,8 @@
 ---
 title: LLM-Guided RTL Design and Verification
 category: research
-importance: 3
+importance: 1
+ongoing: true # shows an "Ongoing" tag; no presentation link yet
 meta:
   - "Principal Investigator: Dr. Rakin Haider, Assistant Professor, CSE, BUET"
   - "Funded by: Bangladesh Industry Research, Development and Innovation (BIRDI)"

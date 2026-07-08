@@ -11,5 +11,5 @@ slides:
   - assets/img/projects/vco/freq-vs-vctrl.jpg
   - assets/img/projects/vco/power-vs-vctrl.jpg
   - assets/img/projects/vco/phase-noise.jpg
-# github: # TODO: add repository link later
+github: https://github.com/tasminkhan/analog-integrated-circuits_Voltage-Controlled-Oscillator-design
 ---

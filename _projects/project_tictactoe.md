@@ -10,5 +10,5 @@ slides:
   - assets/img/projects/tictactoe/pcb-3d-front.png
   - assets/img/projects/tictactoe/pcb-3d-back.png
   - assets/img/projects/tictactoe/pcb-layout.png
-# github: # TODO: add repository link later
+github: https://github.com/tasminkhan/tic-tac-toe-hardware-gaming-interface-2023
 ---

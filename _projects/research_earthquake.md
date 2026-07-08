@@ -1,7 +1,9 @@
 ---
 title: Low-Cost Earthquake Monitoring & Early Warning
 category: research
-importance: 1
+importance: 2
+# Presentation (.pptx in a GitHub repo) opened in-browser via the MS Office viewer:
+presentation: "https://view.officeapps.live.com/op/view.aspx?src=https://raw.githubusercontent.com/tasminkhan/Low-Cost-Seismic-Monitoring-Device/main/presentations/4_Devices%20Developed.pptx"
 # Context lines shown under the title:
 meta:
   - "Principal Investigator: Dr. Tahmeed Malik Al-Hussaini, Professor, Civil Engineering (CE), BUET"
