@@ -1,189 +1,231 @@
+# -----------------------------------------------------------------------------
+# CV data (RenderCV format) — used by _pages/cv.md when cv_format: rendercv.
+# See docs/CUSTOMIZE.md > "Modifying the CV information" for the full guide,
+# and https://docs.rendercv.com/user_guide/yaml_input_structure/ for the
+# upstream RenderCV field reference.
+#
+# Populated from Tasmin_resume_VLSI.pdf. Fields with no source on that PDF are
+# left blank ("") or as an empty section ([]) rather than invented — fill
+# those in yourself, or ask for help adding them.
+# -----------------------------------------------------------------------------
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Tasmin Khan
+  label: "" # no professional title given on the PDF header — e.g. "VLSI / RTL Design Engineer"
+  email: tasminkhanelec@gmail.com
+  phone: "+8801799781173"
+  location: Dhaka, Bangladesh
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: "" # no summary/objective statement given on the PDF
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
+      username: tasminkhan
+    # Add LinkedIn / X / personal site here if you want them shown — none were on the PDF.
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+    street: ""
+    city: Dhaka
+    region: ""
+    postalCode: ""
+    countryCode: BD
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: Bangladesh University of Engineering and Technology (BUET)
+        location: Dhaka, Bangladesh
+        area: Electrical and Electronic Engineering (EEE)
+        studyType: Bachelor of Science (B.Sc.)
+        start_date: 2020-02
+        end_date: 2025-03
+        score: "3.80 / 4.00 CGPA"
+        courses: "VLSI Circuits and Design (Lab), Analog Integrated Circuits & Design (Lab), Digital Electronics (Lab), Microprocessor & Embedded Systems (Lab)"
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Dean's List Award, BUET — awarded for average GPA ≥ 3.75 in two consecutive terms (2023, 2021)"
+          - "University Merit Scholarship, BUET — awarded based on merit ranking in term examinations (2021)"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      # Add earlier degrees (secondary/higher secondary, etc.) here if you want them listed.
+
+    # Split out from the PDF's single "Research / Industrial / Teaching Experience"
+    # headings so each keeps its own PI/funder context. Merge into one "Experience"
+    # section if you'd rather have a single chronological list.
+    Research Experience:
+      - company: "BUET, Dept. of Computer Science and Engineering (CSE)"
+        position: LLM Guided RTL Design and Verification
+        location: Dhaka, Bangladesh
+        start_date: 2026-04
+        end_date: present
+        summary: "Principal Investigator: Dr. Rakin Haider, Assistant Professor, CSE, BUET. Funded by Bangladesh Industry Research, Development and Innovation (BIRDI)."
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Leading design development: authoring design specifications, delegating tasks, and designing RTL with testbenches including AMBA bus interconnect, memory controller and systolic array for GEMM operation"
+          - "Led training sessions teaching the research team SystemVerilog, hardware design, and testbench methodology"
+          - "Investigating limitations of existing datasets (VerilogDB, VeriCoder, RealBench) for industrial-scale designs"
+          - "Testing staged spec-to-RTL generation via intermediate representations to improve LLM design performance"
 
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: "BUET, Dept. of Electrical and Electronic Engineering (EEE)"
+        position: "Search Towards an Advanced Deep Learning Algorithm for MRI Quantitative Susceptibility Mapping (QSM) with Magnetic Anisotropy (UG Thesis)"
+        location: Dhaka, Bangladesh
+        # start_date/end_date not given on the PDF for the thesis itself — add them,
+        # otherwise the automatic RenderCV PDF-generation Action may reject this entry.
+        summary: "Supervisor: Dr. Maruf Ahmed, Assistant Professor, EEE, BUET."
         highlights:
-          - Relativity
-          - Description 2.
+          - "Developed 2D & 3D datasets by implementing a complete multi-orientation MRI preprocessing pipeline"
+          - "Implemented CNN and Transformer models with PyTorch, finding CNNs more suitable due to localized anisotropy"
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: "BUET — RISE Internal Research Grant"
+        position: Development of Low-Cost Methods for Monitoring and Early Warning for Geo-hazards
+        location: Dhaka, Bangladesh
+        # start_date/end_date not given on the PDF — add them, otherwise the automatic
+        # RenderCV PDF-generation Action may reject this entry.
+        summary: "Principal Investigator: Dr. Tahmeed Malik Al-Hussaini, Professor, Civil Engineering (CE), BUET. Co-Principal Investigator: Dr. Md Zunaid Baten, Associate Professor, EEE, BUET. Funded by the Research and Innovation Center for Science and Engineering (RISE) Internal Research Grant, BUET."
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Conducted noise analysis of MEMS sensors, determining the optimal device for signals down to 0.1 m/s²"
+          - "Built stand-alone unit, validated in lab, and field-deployed a multi-station network detecting multiple earthquakes"
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+    Industrial Experience:
+      - company: gixsystems-AI
+        position: Circuit Design and Modeling Engineer
+        location: Dhaka, Bangladesh
+        start_date: 2026-04
+        end_date: present
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - "Behavioral Modeling and Design of high frequency Power Converter Integrated circuit and Discrete Devices"
+          - "Established open-source pipeline with ngspice and OpenVAF for simulation using a custom process design kit (PDK)"
+
+      - company: Silliconova
+        position: Internship on VLSI Design
+        location: Dhaka, Bangladesh
+        start_date: 2024-06
+        end_date: 2024-07
+        highlights:
+          - "Study of Digital Design and Verification, Physical Design, DFT, Packaging and FinFET, GAA, CFET technologies"
+          - "Hands-on experience in standard cell Layout Design, DRC/LVS Verification, and Placement Techniques"
+
+    Teaching Experience:
+      - company: "Ahsanullah University of Science and Technology (AUST), Dept. of EEE"
+        position: Adjunct Lecturer
+        location: Dhaka, Bangladesh
+        start_date: 2025-12
+        end_date: 2026-04
+
+      - company: Udvash Academic Coaching
+        position: "Physics & ICT Instructor (Grade 8-12)"
+        start_date: 2021
+        end_date: 2023
+        # No location given on the PDF for this entry specifically.
+
+    Leadership Activities:
+      - company: "IEEE WIE Affinity Group, BUET Student Branch"
+        position: Chairperson
+        start_date: 2024
+        end_date: 2024
+
+      - company: "IEEE WIE Affinity Group, BUET Student Branch"
+        position: Assistant General Secretary
+        start_date: 2024
+        end_date: 2024
+
+      - company: "IEEE Bangladesh Section, BUET Student Branch"
+        position: Executive Member
+        start_date: 2021
+        end_date: 2022
+
+    Volunteer: [] # none listed on the PDF — add entries with company/position/location/start_date/end_date/summary/highlights
 
     Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - title: "Champion, VLSI-thon"
+        date: 2024-12
+        awarder: Neural Semiconductor
+        summary: "Identified the error source in a circuit from the output clock pattern and designed the solution logic circuit. Designed the circuit and layout to implement logic from a given truth table, along with DRC and LVS checks."
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - title: RISE Undergraduate Student Research Grant
+        date: 2024
+        awarder: "Research and Innovation Center for Science and Engineering (RISE), BUET"
+        summary: "~700 USD, awarded for undergraduate thesis research."
+
+      - title: "Honorable Mention, Intra BUET PCB Design Contest"
+        date: 2023
+        awarder: "IEEE Robotics and Automation Society (RAS), BUET Student Branch Chapter"
+
+      - title: "Second Runner-up, HULT Prize at BUET"
+        date: 2020
+        awarder: HULT Prize Foundation
+        summary: "A Social Entrepreneurship Competition."
+
+      - title: Government Merit Scholarship
+        date: 2019
+        awarder: "Ministry of Education, Bangladesh"
+
+      - title: Government Merit Scholarship
+        date: 2017
+        awarder: "Ministry of Education, Bangladesh"
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: "Design and Development of Low-Cost Earthquake Monitoring System Based on MEMS Accelerometer"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+          - Tasmin Khan
+          - Rahat Ibn Nabi
+          - Nilotpaul Kundu Dhrubo
+          - et al.
+        publisher: IEEE Transactions on Instrumentation and Measurement
+        releaseDate: 2026-05
+        summary: "Under review (submitted May 2026)."
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
+      - title: "Development of Low-Cost Seismic Monitoring System for Field Application in Bangladesh"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+          - T. M. Al-Hussaini
+          - M. Z. Baten
+          - R. I. Nabi
+          - K. Islam
+          - P. Ghosh
+          - Tasmin Khan
+          - et al.
+        publisher: "IAGA/IASPEI Joint Scientific Meeting, Lisbon, Portugal"
+        releaseDate: 2025-08
+        summary: "Presented at the IAGA/IASPEI Joint Scientific Meeting, Lisbon, Portugal (Aug-Sept 2025)."
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Design & Implementation
+        keywords: "Cadence (Virtuoso, Genus, Innovus, Assura), Vivado, Quartus, OrCAD PSpice, Proteus"
+      - name: Simulation & Verification
+        keywords: "Xcelium, ModelSim, QuestaSim, Icarus Verilog, Aldec Riviera-PRO, Cocotb, Pytest"
+      - name: Programming & Modeling
+        keywords: "Verilog HDL, SystemVerilog, Python, C, C++, PyTorch, Git, MATLAB, Simulink"
+      - name: Development Platforms
+        keywords: "Linux, Keil uVision, Makefile, Arduino IDE, FPGA and CPLD Development Boards"
+      - name: Visualization & Documentation
+        keywords: "GTKWave, SimVision, Matplotlib, LaTeX, AutoCAD, Adobe Illustrator"
 
-    Languages:
-      - name: German
-        summary: "Native speaker"
+    Languages: [] # none listed on the PDF — add entries with name/summary (e.g. proficiency level)
 
-      - name: English
-        summary: "Fluent"
+    Interests: [] # none listed on the PDF — add entries with name/icon/keywords
 
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+    Certificates: [] # none listed on the PDF — add entries with name/date/issuer/icon
 
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+    "Standardized Test":
+      - name: IELTS Academic
+        date: 2025-08
+        issuer: ""
+        summary: "Overall: 8.5 | Listening: 9.0 | Reading: 9.0 | Writing: 8.0 | Speaking: 8.0"
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+      - name: "Three Band Digital Audio Equalizer Peripheral with Biquad IIR Filters"
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+          - "Designed three-band audio equalizer with 16-bit fixed-point biquad IIR filters compiled using Icarus Verilog and verified with cocotb Python testbenches, implementing a RISC-V peripheral for digital audio processing"
+        # GitHub link shown on the PDF, but the underlying URL text isn't extractable from it — add a url: field yourself.
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: "16-bit Ripple Carry Adder with Coverage-Driven Layered Testbench and Layout"
+        highlights:
+          - "Developed a layered testbench in NCSim/Xcelium skewing randomization toward unhit coverbins, and performed PnR in Innovus, achieving faster coverage closure and a 93.71% density-utilized layout"
+        # GitHub link shown on the PDF, but the underlying URL text isn't extractable from it — add a url: field yourself.
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: "Voltage Control LC-cross Coupled Oscillator Design for the Range 855-881 MHz"
+        highlights:
+          - "Designed and laid out the circuit in Virtuoso with proper sizing (W/L) and a low phase noise of –157.9 dBc/Hz"
+        # GitHub link shown on the PDF, but the underlying URL text isn't extractable from it — add a url: field yourself.
+
+      - name: "Hardware Gaming Interface to Play Single Round Tic-Tac-Toe with Custom PCB"
+        highlights:
+          - "Built game logic with player identification and cheat prevention, designing PCBs in Proteus for an error-free play"
+        # GitHub link shown on the PDF, but the underlying URL text isn't extractable from it — add a url: field yourself.
+
+    References: [] # none listed on the PDF — add entries with name/icon/reference
