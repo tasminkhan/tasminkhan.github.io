@@ -2,7 +2,7 @@
 layout: page
 title: research
 permalink: /research/
-description: Research projects in VLSI/EDA, medical imaging, and low-cost instrumentation.
+description:
 nav: true
 nav_order: 2.5
 images:

@@ -6,8 +6,8 @@ highlights:
   - "Designed and laid out in Cadence Virtuoso with proper transistor sizing (W/L)"
   - "Achieved a low phase noise of –157.9 dBc/Hz"
 slides:
-  - assets/img/projects/vco/layout.jpg
-  - assets/img/projects/vco/schematic.png
+  - assets/img/projects/vco/thumbnail.png
+  - assets/img/projects/vco/layout.png
   - assets/img/projects/vco/freq-vs-vctrl.jpg
   - assets/img/projects/vco/power-vs-vctrl.jpg
   - assets/img/projects/vco/phase-noise.jpg

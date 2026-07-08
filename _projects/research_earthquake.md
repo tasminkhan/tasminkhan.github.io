@@ -13,9 +13,11 @@ highlights:
   - "Built a stand-alone unit, validated it in the lab, and field-deployed a multi-station network that detected multiple earthquakes"
 # Slider images (first one shows upfront). Reorder/rename after finalizing filenames.
 slides:
-  - assets/img/research/earthquake/field-deployment.png
-  - assets/img/research/earthquake/station-wide.png
-  - assets/img/research/earthquake/station-closeup.png
-  - assets/img/research/earthquake/system-flowchart.png
+  - assets/img/research/earthquake/thumbnail.png
+  - assets/img/research/earthquake/flowchart.png
+  - assets/img/research/earthquake/wave.png
+  - assets/img/research/earthquake/version.png
+  - assets/img/research/earthquake/versionversion.png
+  - assets/img/research/earthquake/test.png
 # github: # TODO: add repository / live link later
 ---

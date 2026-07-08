@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Hardware, VLSI, and embedded design projects.
+description:
 nav: true
 nav_order: 3
 images:

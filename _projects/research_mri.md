@@ -9,7 +9,9 @@ highlights:
   - "Developed 2D & 3D datasets by implementing a complete multi-orientation MRI preprocessing pipeline"
   - "Implemented CNN and Transformer models with PyTorch, finding CNNs more suitable due to localized anisotropy"
 slides:
-  - assets/img/research/mri/picture1.png
+  - assets/img/research/mri/thumbnail.png
+  - assets/img/research/mri/orientation.png
+  - assets/img/research/mri/chi.png
   - assets/img/research/mri/picture2.png
 # github: # TODO: add repository / live link later
 ---
