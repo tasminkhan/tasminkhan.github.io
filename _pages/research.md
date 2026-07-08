@@ -11,13 +11,20 @@ images:
 
 <!-- pages/research.md — inline cards (no separate detail pages).
      Content comes from _projects/*.md front matter with `category: research`,
-     ordered by `importance`. Each card: auto-advancing image slider + bullet details. -->
+     ordered by `importance`. Each card: auto-advancing image slider + bullet details.
+     Layout uses a self-contained flexbox (NOT Bootstrap col-*), because the theme
+     does not give col-md-* a width and Swiper needs an explicit size or it collapses. -->
 
 <style>
-  .card-list .item { padding-bottom: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(0,0,0,.1); }
-  .card-list .item:last-child { border-bottom: 0; }
-  .card-list swiper-container { width: 100%; }
-  .card-list swiper-slide img { width: 100%; height: 260px; object-fit: contain; }
+  .card-list .item { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; padding-bottom: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(128,128,128,.25); }
+  .card-list .item:last-child { border-bottom: 0; margin-bottom: 0; }
+  .card-list .media { flex: 0 0 340px; max-width: 100%; }
+  .card-list .body { flex: 1 1 320px; min-width: 0; }
+  .card-list swiper-container { display: block; width: 100%; height: 260px; }
+  .card-list swiper-slide { display: flex; align-items: center; justify-content: center; height: 100%; }
+  .card-list swiper-slide img { width: 100%; height: 100%; object-fit: contain; }
+  .card-list .media > figure { margin: 0; }
+  .card-list .media > figure img { width: 100%; height: 260px; object-fit: contain; }
   .card-list .meta { opacity: .75; font-size: .9rem; margin-bottom: .2rem; }
   .card-list .links { margin-top: .8rem; }
   .card-list .links a { display: inline-block; margin-right: .5rem; padding: .25rem .7rem; border: 1px solid currentColor; border-radius: .35rem; font-size: .85rem; text-decoration: none; }
@@ -29,9 +36,9 @@ images:
 {% assign items = site.projects | where: "category", "research" | sort: "importance" %}
 {% for project in items %}
   {% assign n = project.slides | size %}
-  <div class="item row align-items-center">
+  <div class="item">
     {% if n > 0 %}
-    <div class="col-md-5 mt-3 mt-md-0">
+    <div class="media">
       {% if n > 1 %}
       <swiper-container autoplay="true" autoplay-delay="3500" loop="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true">
         {% for img in project.slides %}
@@ -42,10 +49,8 @@ images:
       {% include figure.liquid loading="eager" path=project.slides.first class="img-fluid rounded z-depth-1" %}
       {% endif %}
     </div>
-    <div class="col-md-7 mt-3 mt-md-0">
-    {% else %}
-    <div class="col-12">
     {% endif %}
+    <div class="body">
       <h3 class="mb-2">{{ project.title }}</h3>
       {% for m in project.meta %}<div class="meta">{{ m }}</div>{% endfor %}
       {% if project.highlights %}
