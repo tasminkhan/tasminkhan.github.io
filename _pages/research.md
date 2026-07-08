@@ -1,16 +1,16 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: Hardware, VLSI, and embedded design projects.
+title: research
+permalink: /research/
+description: Research projects in VLSI/EDA, medical imaging, and low-cost instrumentation.
 nav: true
-nav_order: 3
+nav_order: 2.5
 ---
 
-<!-- pages/projects.md — full-width list: image left, description right, one per row.
-     Entries live in _projects/*.md with `category: hardware`; ordered by `importance`. -->
+<!-- pages/research.md — full-width list: image left, description right, one per row.
+     Entries live in _projects/*.md with `category: research`; ordered by `importance`. -->
 <div class="projects">
-{% assign items = site.projects | where: "category", "hardware" | sort: "importance" %}
+{% assign items = site.projects | where: "category", "research" | sort: "importance" %}
 {% for project in items %}
   <div class="row align-items-center my-3">
     {% if project.img %}
