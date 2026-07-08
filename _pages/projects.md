@@ -22,9 +22,9 @@ images:
   .card-list .body { flex: 1 1 320px; min-width: 0; }
   .card-list swiper-container { display: block; width: 100%; height: 260px; }
   .card-list swiper-slide { display: flex; align-items: center; justify-content: center; height: 100%; }
-  .card-list swiper-slide img { width: 100%; height: 100%; object-fit: contain; }
-  .card-list .media > figure { margin: 0; }
-  .card-list .media > figure img { width: 100%; height: 260px; object-fit: contain; }
+  .card-list swiper-slide img { max-width: 100%; max-height: 100%; width: auto; height: auto; }
+  .card-list .media > figure { margin: 0; text-align: center; }
+  .card-list .media > figure img { max-width: 100%; max-height: 260px; width: auto; height: auto; }
   .card-list .meta { opacity: .75; font-size: .9rem; margin-bottom: .2rem; }
   .card-list .links { margin-top: .8rem; }
   .card-list .links a { display: inline-block; margin-right: .5rem; padding: .25rem .7rem; border: 1px solid currentColor; border-radius: .35rem; font-size: .85rem; text-decoration: none; }
