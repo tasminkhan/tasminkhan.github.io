@@ -27,8 +27,8 @@ nav_order: 1
   .education .edu-highlights { margin: .6rem 0 0; padding-left: 1.1rem; }
   .education .edu-highlights li { color: var(--global-theme-color, #b509ac); margin-bottom: .25rem; }
 
-  /* Relevant coursework — standout box, two side-by-side columns (neutral, no accent color) */
-  .edu-courses { margin-top: .9rem; padding: .7rem .95rem; border-left: 3px solid rgba(128,128,128,.35); background: rgba(128,128,128,.08); border-radius: .3rem; }
+  /* Relevant coursework — accent-bordered standout box, two side-by-side columns (label text stays neutral) */
+  .edu-courses { margin-top: .9rem; padding: .7rem .95rem; border-left: 3px solid var(--global-theme-color, #b509ac); background: rgba(128,128,128,.08); border-radius: .3rem; }
   .edu-courses-label { font-weight: 700; text-transform: uppercase; letter-spacing: .07em; font-size: .74rem; margin-bottom: .45rem; }
   .edu-courses-list { columns: 2; column-gap: 1.6rem; margin: 0; padding-left: 1.1rem; }
   .edu-courses-list li { margin-bottom: .25rem; break-inside: avoid; }
