@@ -12,6 +12,7 @@ nav_order: 4
      on the research tab, so they are intentionally left out. -->
 
 <style>
+  .post-header { display: none; } /* hide the "work" page title; the Industry/Teaching headings serve as headlines */
   .exp-list .exp-section { margin: 1.8rem 0 1rem; padding-bottom: .3rem; border-bottom: 1px solid rgba(128,128,128,.25); }
   .exp-list .exp-section:first-child { margin-top: 0; }
   .exp-list .exp-item { padding-bottom: 1.2rem; margin-bottom: 1.2rem; border-bottom: 1px solid rgba(128,128,128,.15); }

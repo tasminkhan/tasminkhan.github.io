@@ -16,6 +16,8 @@ images:
      does not give col-md-* a width and Swiper needs an explicit size or it collapses. -->
 
 <style>
+  .post-header { display: none; } /* hide the "projects" page title; use a section headline instead */
+  .section-head { margin: 0 0 1.5rem; padding-bottom: .4rem; border-bottom: 1px solid rgba(128,128,128,.35); }
   .card-list .item { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; padding-bottom: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(128,128,128,.25); }
   .card-list .item:last-child { border-bottom: 0; margin-bottom: 0; }
   .card-list .media { flex: 0 0 340px; max-width: 100%; }
@@ -32,6 +34,7 @@ images:
   .card-list .tag-ongoing { display: inline-block; padding: .22rem .6rem; border-radius: .35rem; font-size: .8rem; font-weight: 600; background: #e0a800; color: #000; }
 </style>
 
+<h2 class="section-head">Projects</h2>
 <div class="card-list">
 {% assign items = site.projects | where: "category", "hardware" | sort: "importance" %}
 {% for project in items %}

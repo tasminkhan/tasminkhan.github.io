@@ -16,6 +16,8 @@ images:
      does not give col-md-* a width and Swiper needs an explicit size or it collapses. -->
 
 <style>
+  .post-header { display: none; } /* hide the "research" page title; use section headlines instead */
+  .section-head { margin: 0 0 1.5rem; padding-bottom: .4rem; border-bottom: 1px solid rgba(128,128,128,.35); }
   .card-list .item { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; padding-bottom: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(128,128,128,.25); }
   .card-list .item:last-child { border-bottom: 0; margin-bottom: 0; }
   .card-list .media { flex: 0 0 340px; max-width: 100%; }
@@ -40,6 +42,7 @@ images:
   .pub-list .pub-summary { opacity: .8; font-size: .9rem; margin-top: .3rem; }
 </style>
 
+<h2 class="section-head">Research</h2>
 <div class="card-list">
 {% assign items = site.projects | where: "category", "research" | sort: "importance" %}
 {% for project in items %}
