@@ -30,6 +30,14 @@ images:
   .card-list .links a { display: inline-block; margin-right: .5rem; padding: .25rem .7rem; border: 1px solid currentColor; border-radius: .35rem; font-size: .85rem; text-decoration: none; }
   .card-list .links a:hover { opacity: .7; }
   .card-list .tag-ongoing { display: inline-block; padding: .22rem .6rem; border-radius: .35rem; font-size: .8rem; font-weight: 600; background: #e0a800; color: #000; }
+  .pub-list { margin-top: 2.5rem; }
+  .pub-list h2 { padding-bottom: .4rem; border-bottom: 1px solid rgba(128,128,128,.35); }
+  .pub-list .pub-item { padding-bottom: 1.1rem; margin-bottom: 1.1rem; border-bottom: 1px solid rgba(128,128,128,.15); }
+  .pub-list .pub-item:last-child { border-bottom: 0; margin-bottom: 0; }
+  .pub-list .pub-title { font-weight: 600; font-size: 1.02rem; }
+  .pub-list .pub-authors { opacity: .85; font-size: .92rem; margin-top: .2rem; }
+  .pub-list .pub-venue { opacity: .7; font-size: .88rem; font-style: italic; margin-top: .15rem; }
+  .pub-list .pub-summary { opacity: .8; font-size: .9rem; margin-top: .3rem; }
 </style>
 
 <div class="card-list">
@@ -69,3 +77,18 @@ images:
   </div>
 {% endfor %}
 </div>
+
+{% assign publications = site.data.cv.cv.sections.Publications %}
+{% if publications and publications != empty %}
+<div class="pub-list">
+<h2>Publications</h2>
+{% for p in publications %}
+<div class="pub-item">
+  <div class="pub-title">{{ p.title }}</div>
+  {% if p.authors %}<div class="pub-authors">{{ p.authors | join: ", " | replace: "Tasmin Khan", "<strong>Tasmin Khan</strong>" }}</div>{% endif %}
+  <div class="pub-venue">{{ p.publisher }}{% if p.releaseDate %} &middot; {{ p.releaseDate }}{% endif %}</div>
+  {% if p.summary %}<div class="pub-summary">{{ p.summary }}</div>{% endif %}
+</div>
+{% endfor %}
+</div>
+{% endif %}

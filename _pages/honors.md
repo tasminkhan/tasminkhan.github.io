@@ -21,6 +21,9 @@ nav_order: 1
   .honors-block .honors-org { opacity: .85; margin-top: .15rem; }
   .honors-block .honors-summary { opacity: .8; font-size: .92rem; margin-top: .4rem; }
   .honors-block ul { margin: .5rem 0 0; }
+  .honors-block .honors-courses { margin-top: .7rem; }
+  .honors-block .honors-courses-label { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; opacity: .6; margin-bottom: .15rem; }
+  .honors-block .honors-courses-list { font-size: .92rem; opacity: .9; }
 </style>
 
 {% assign sections = site.data.cv.cv.sections %}
@@ -34,12 +37,16 @@ nav_order: 1
     {% if e.start_date %}<span class="honors-dates">{{ e.start_date }}{% if e.end_date %} &ndash; {{ e.end_date }}{% endif %}</span>{% endif %}
   </div>
   <div class="honors-org">{{ e.institution }}{% if e.location %} &middot; {{ e.location }}{% endif %}</div>
-  {% if e.score %}<div class="honors-summary">{{ e.score }}</div>{% endif %}
-  {% if e.courses %}<div class="honors-summary"><strong>Relevant courses:</strong> {{ e.courses }}</div>{% endif %}
   {% if e.highlights %}
   <ul>
     {% for h in e.highlights %}<li>{{ h }}</li>{% endfor %}
   </ul>
+  {% endif %}
+  {% if e.courses %}
+  <div class="honors-courses">
+    <div class="honors-courses-label">Relevant Coursework</div>
+    <div class="honors-courses-list">{{ e.courses }}</div>
+  </div>
   {% endif %}
 </div>
 {% endfor %}
