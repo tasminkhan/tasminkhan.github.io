@@ -1,7 +1,7 @@
 ---
 title: Hardware Tic-Tac-Toe Interface with Custom PCB
 category: hardware
-importance: 4
+importance: 1
 highlights:
   - "Game logic with player identification and cheat prevention for error-free single-round play"
   - "Custom PCB designed in Proteus"

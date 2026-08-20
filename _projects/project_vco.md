@@ -1,7 +1,7 @@
 ---
 title: Voltage-Controlled LC Cross-Coupled Oscillator (855–881 MHz)
 category: hardware
-importance: 3
+importance: 2
 highlights:
   - "Designed and laid out in Cadence Virtuoso with proper transistor sizing (W/L)"
   - "Achieved a low phase noise of –157.9 dBc/Hz"

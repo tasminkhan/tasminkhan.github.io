@@ -50,13 +50,14 @@ cv:
     # section if you'd rather have a single chronological list.
     Research Experience:
       - company: "BUET, Dept. of Computer Science and Engineering (CSE)"
-        position: LLM Guided RTL Design and Verification
+        position: "Hardware Architecture & RTL Automation"
         location: Dhaka, Bangladesh
         start_date: 2026-04
         end_date: present
         summary: "Principal Investigator: Dr. Rakin Haider, Assistant Professor, CSE, BUET. Funded by Bangladesh Industry Research, Development and Innovation (BIRDI)."
         highlights:
           - "Leading design development: authoring design specifications, delegating tasks, and designing RTL with testbenches including AMBA bus interconnect, memory controller and systolic array for GEMM operation"
+          - "Exploring sparsity-enabling architectures for inference hardware"
           - "Led training sessions teaching the research team SystemVerilog, hardware design, and testbench methodology"
           - "Investigating limitations of existing datasets (VerilogDB, VeriCoder, RealBench) for industrial-scale designs"
           - "Testing staged spec-to-RTL generation via intermediate representations to improve LLM design performance"
@@ -83,13 +84,14 @@ cv:
 
     Industrial Experience:
       - company: gixsystems-AI
-        position: Behavioral Modeling Engineer
+        position: Modeling Engineer
         location: Dhaka, Bangladesh
         start_date: 2026-04
         end_date: present
         highlights:
-          - "Behavioral Modeling and Design of high frequency Power Converter Integrated circuit and Discrete Devices"
-          - "Established open-source pipeline with ngspice and OpenVAF for simulation using a custom process design kit (PDK)"
+          - "Behavioral Modeling and Design of Power Converter Integrated circuit and Discrete Devices"
+          - "Built a physics-informed DL pipeline mapping characteristic curves to compact model parameters"
+          - "Established open-source pipeline with ngspice and OpenVAF for simulation using custom process design kit (PDK)"
 
       - company: Silliconova
         position: Internship on VLSI Design
@@ -131,7 +133,16 @@ cv:
         end_date: 2022
 
     Volunteer: [] # none listed on the PDF — add entries with company/position/location/start_date/end_date/summary/highlights
-
+    Mentorship:
+      - company: "BUET, Hardware Architecture & RTL Automation Research Group"
+        position: Research Team Training
+        location: Dhaka, Bangladesh
+        start_date: 2026-04
+        end_date: present
+        highlights:
+          - "Reviewing RTL designs and testcases done by team members with feedbacks on correctness and coverage"
+          - "Led sessions on SystemVerilog, RTL/hardware design fundamentals, and testbench methodology"
+          
     Awards:
       - title: "Champion, VLSI-thon"
         date: 2024-12
@@ -209,24 +220,21 @@ cv:
         summary: "Overall: 8.5 | Listening: 9.0 | Reading: 9.0 | Writing: 8.0 | Speaking: 8.0"
 
     Projects:
-      - name: "Three Band Digital Audio Equalizer Peripheral with Biquad IIR Filters"
+
+      - name: "AXI4-interconnect with weighted arbiter for fair SoC bandwidth distribution"
+        highlights:
+          - "Designed the crossbar with custom arbiter weight for fairness per transaction"
+
+      - name: "Three Band Digital Audio Equalizer Peripheral with biquad IIR filters"
         highlights:
           - "Designed three-band audio equalizer with 16-bit fixed-point biquad IIR filters compiled using Icarus Verilog and verified with cocotb Python testbenches, implementing a RISC-V peripheral for digital audio processing"
-        # GitHub link shown on the PDF, but the underlying URL text isn't extractable from it — add a url: field yourself.
 
-      - name: "16-bit Ripple Carry Adder with Coverage-Driven Layered Testbench and Layout"
+      - name: "16bit Ripple Carry Adder with Coverage Driven Layered Testbench and Layout"
         highlights:
           - "Developed a layered testbench in NCSim/Xcelium skewing randomization toward unhit coverbins, and performed PnR in Innovus, achieving faster coverage closure and a 93.71% density-utilized layout"
-        # GitHub link shown on the PDF, but the underlying URL text isn't extractable from it — add a url: field yourself.
 
-      - name: "Voltage Control LC-cross Coupled Oscillator Design for the Range 855-881 MHz"
+      - name: "Hardware Gaming Interface to play Single Round Tic-Tac-Toe with Custom PCB"
         highlights:
-          - "Designed and laid out the circuit in Virtuoso with proper sizing (W/L) and a low phase noise of –157.9 dBc/Hz"
-        # GitHub link shown on the PDF, but the underlying URL text isn't extractable from it — add a url: field yourself.
-
-      - name: "Hardware Gaming Interface to Play Single Round Tic-Tac-Toe with Custom PCB"
-        highlights:
-          - "Built game logic with player identification and cheat prevention, designing PCBs in Proteus for an error-free play"
-        # GitHub link shown on the PDF, but the underlying URL text isn't extractable from it — add a url: field yourself.
+          - "Built game logic with player identification and cheat prevention designing PCBs in Proteus for an error-free play"
 
     References: [] # none listed on the PDF — add entries with name/icon/reference

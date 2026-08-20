@@ -36,7 +36,7 @@ images:
 
 <h2 class="section-head">Projects</h2>
 <div class="card-list">
-{% assign items = site.projects | where: "category", "hardware" | sort: "importance" %}
+{% assign items = site.projects | where: "category", "hardware" | sort: "importance" | reverse %}
 {% for project in items %}
   {% assign n = project.slides | size %}
   <div class="item">

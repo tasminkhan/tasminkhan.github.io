@@ -1,7 +1,7 @@
 ---
 title: Three-Band Digital Audio Equalizer Peripheral
 category: hardware
-importance: 1
+importance: 4
 highlights:
   - "16-bit fixed-point biquad IIR filters compiled with Icarus Verilog, verified with cocotb Python testbenches"
   - "Implemented as a RISC-V peripheral for digital audio processing"

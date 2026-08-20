@@ -26,7 +26,7 @@ nav_order: 4
 </style>
 
 {% assign sections = site.data.cv.cv.sections %}
-{% assign show = "Industrial Experience|Teaching Experience" | split: "|" %}
+{% assign show = "Industrial Experience|Mentorship|Teaching Experience" | split: "|" %}
 <div class="exp-list">
 {% for name in show %}
   {% assign entries = sections[name] %}
