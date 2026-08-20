@@ -24,7 +24,7 @@ slides:
 
 &#x20; - assets/img/projects/axi/burstwriteslave.png
 
-
+&#x20; - assets/img/projects/axi/interconnectburst.png
 
 github: https://github.com/tasminkhan/AXI\_interconnect
 
