@@ -6,6 +6,8 @@ category: hardware
 
 importance: 5
 
+
+
 highlights:
 
 &#x20; - AXI4 with independent write, read and response channel handling
@@ -15,6 +17,8 @@ highlights:
 &#x20; - Outstanding write tracking for correct W-channel routing
 
 &#x20; - Weighted arbitration for fair and configurable SoC bandwidth distribution
+
+
 
 slides:
 
