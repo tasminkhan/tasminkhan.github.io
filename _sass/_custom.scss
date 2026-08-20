@@ -1,4 +1,15 @@
 .profile {
-  max-width: 180px;
-  margin-left: 1.5rem; // adjust if text feels too close to the image
+  max-width: 95vw;
+}
+
+@media (min-width: 576px) {
+  .profile {
+    max-width: 22vw;
+  }
+}
+
+@media (min-width: 930px) {
+  .profile {
+    max-width: 50px;
+  }
 }
