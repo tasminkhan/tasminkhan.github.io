@@ -26,7 +26,8 @@ nav_order: 4
 </style>
 
 {% assign sections = site.data.cv.cv.sections %}
-{% assign show = "Industrial Experience|Mentorship|Teaching Experience" | split: "|" %}
+{% comment %} `show` must match the section keys in _data/cv.yml exactly; the key doubles as the heading. {% endcomment %}
+{% assign show = "Industry|Mentorship|Teaching" | split: "|" %}
 <div class="exp-list">
 {% for name in show %}
   {% assign entries = sections[name] %}
