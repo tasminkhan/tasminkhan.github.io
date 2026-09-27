@@ -14,7 +14,7 @@ badges:
 
 highlights:
   - "Designed and implemented a quantized CNN neuron for fixed point arithmetic through a full RTL-to-GDSII flow in the open-source CNFET7 carbon-nanotube library"
-  - "Post-route neuron is 1.24× faster with 59.2% lower dynamic power than an identical ASAP7 FinFET build — a 3.6× energy-delay-product advantage"
+  - "Post-route neuron is 1.24× faster with 59.2% lower dynamic power than an identical ASAP7 FinFET build; a 3.6× energy-delay-product advantage"
   - "Per-instance normalization shows that the area penalty is a library-maturity effect: CNFET7 cells are 17.1% smaller per instance but 66.7% more numerous"
 
 slides:
