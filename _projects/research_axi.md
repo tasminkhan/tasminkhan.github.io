@@ -13,10 +13,10 @@ badges:
   - ["traffic sim", "SystemVerilog TB"]
 
 highlights:
-  - AXI4 with independent write, read and response channel handling
-  - Configurable address decoding and burst validation
-  - Outstanding write tracking for correct W-channel routing
-  - Weighted arbitration for fair and configurable SoC bandwidth distribution
+  - "Designed a 3×3 AXI4 crossbar in SystemVerilog with three arbitration policies: round robin, priority based, and priority-aware deficit round robin"
+  - "priority-aware DRR charges each grant in beats, keeping every burst whole while bringing two equal-weight masters from 1:16 to 1:1 bandwidth parity at full load"
+  - "Cut latency-critical read latency from 95 to 37 cycles — 190 ns to 74 ns at 500 MHz — a 61% reduction over round robin"
+  - "Took all three policies RTL-to-GDSII on ASAP7 7-nm under one shared traffic generator and measured the per-policy area, power, and timing cost"
 
 slides:
   - assets/img/research/axi/thumbnail.jpg
