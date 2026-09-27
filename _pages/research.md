@@ -29,6 +29,10 @@ images:
   .card-list .media > figure { margin: 0; text-align: center; }
   .card-list .media > figure img { max-width: 100%; max-height: 260px; width: auto; height: auto; background: #fff; padding: .5rem; border-radius: .4rem; }
   .card-list .meta { opacity: .75; font-size: .9rem; margin-bottom: .2rem; }
+  .card-list .badges { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: .55rem; }
+  .card-list .badge-chip { display: inline-flex; border: 1px solid rgba(128,128,128,.4); border-radius: .3rem; font-size: .72rem; line-height: 1.5; overflow: hidden; }
+  .card-list .badge-chip .k { padding: .05rem .4rem; background: rgba(128,128,128,.15); opacity: .8; }
+  .card-list .badge-chip .v { padding: .05rem .4rem; }
   .card-list .links { margin-top: .8rem; }
   .card-list .links a { display: inline-block; margin-right: .5rem; padding: .25rem .7rem; border: 1px solid currentColor; border-radius: .35rem; font-size: .85rem; text-decoration: none; }
   .card-list .links a:hover { opacity: .7; }
@@ -68,6 +72,7 @@ images:
     {% endif %}
     <div class="body">
       <h3 class="mb-2">{{ project.title }}</h3>
+      {% if project.badges %}<div class="badges">{% for b in project.badges %}<span class="badge-chip"><span class="k">{{ b[0] | escape }}</span><span class="v">{{ b[1] | escape }}</span></span>{% endfor %}</div>{% endif %}
       {% for m in project.meta %}<div class="meta">{{ m }}</div>{% endfor %}
       {% if project.highlights %}
       <ul class="mb-0 mt-2">

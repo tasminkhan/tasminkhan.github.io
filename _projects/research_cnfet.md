@@ -3,6 +3,13 @@ title: A CNN Neuron for Always-On Near-Sensor Inference in 7nm Technology
 category: research
 importance: 3
 submitted: true # shows a "Manuscript Submitted" tag
+# Grey spec chips shown under the title: [label, value]
+badges:
+  - ["flow", "RTL to GDSII"]
+  - ["PDK", "CNFET7 · ASAP7"]
+  - ["Cadence", "Genus · Innovus"]
+  - ["scripting", "TCL"]
+  - ["HDL", "SystemVerilog"]
 highlights:
   - "Full RTL-to-GDSII implementation of a quantized CNN neuron (16-bit signed MAC, 40-bit accumulator, Q4.12 requantization, ReLU) in the open-source CNFET7 carbon-nanotube library"
   - "Post-route neuron is 1.24x faster with 59.2% lower dynamic power than an identical ASAP7 FinFET build, giving a 3.6x energy-delay-product advantage"

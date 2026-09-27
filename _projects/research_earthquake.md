@@ -3,6 +3,12 @@ title: Low-Cost Earthquake Monitoring & Early Warning
 category: research
 importance: 2
 accepted: "IEEE TIM 2026" # shows a "Manuscript Accepted · IEEE TIM 2026" tag
+# Grey spec chips shown under the title: [label, value]
+badges:
+  - ["unit cost", "<$150"]
+  - ["platform", "Raspberry Pi Zero 2 W"]
+  - ["embedded", "Python · C++"]
+  - ["analysis", "MATLAB"]
 # Presentation (.pptx in a GitHub repo) opened in-browser via the MS Office viewer:
 presentation: "https://view.officeapps.live.com/op/view.aspx?src=https://raw.githubusercontent.com/tasminkhan/Low-Cost-Seismic-Monitoring-Device/main/presentations/4_Devices%20Developed.pptx"
 # Context lines shown under the title:
