@@ -2,6 +2,15 @@
 title: AXI4-interconnect with weighted arbiter for fair SoC bandwidth distribution
 category: research
 importance: 4
+submitted: true # shows a "Manuscript Submitted" tag
+# Grey spec chips shown under the title: [label, value]
+badges:
+  - ["flow", "RTL to GDSII"]
+  - ["PDK", "ASAP7"]
+  - ["HDL", "SystemVerilog"]
+  - ["Cadence", "Genus · Innovus"]
+  - ["scripting", "TCL"]
+  - ["traffic sim", "SystemVerilog TB"]
 
 highlights:
   - AXI4 with independent write, read and response channel handling
