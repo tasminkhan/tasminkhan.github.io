@@ -3,6 +3,7 @@ title: A CNN Neuron for Always-On Near-Sensor Inference in 7nm Technology
 category: research
 importance: 3
 submitted: true # shows a "Manuscript Submitted" tag
+github: https://github.com/tasminkhan/CNFET7-nm_CNN_Neuron
 # Grey spec chips shown under the title: [label, value]
 badges:
   - ["flow", "RTL to GDSII"]
