@@ -34,6 +34,7 @@ images:
   .card-list .links a:hover { opacity: .7; }
   .card-list .tag-ongoing { display: inline-block; padding: .22rem .6rem; border-radius: .35rem; font-size: .8rem; font-weight: 600; background: #e0a800; color: #000; }
   .card-list .tag-submitted { display: inline-block; padding: .22rem .6rem; border-radius: .35rem; font-size: .8rem; font-weight: 600; background: #3f8ecc; color: #fff; }
+  .card-list .tag-accepted { display: inline-block; padding: .22rem .6rem; border-radius: .35rem; font-size: .8rem; font-weight: 600; background: #2e9e5b; color: #fff; }
   .pub-list { margin-top: 2.5rem; }
   .pub-list h2 { padding-bottom: .4rem; border-bottom: 1px solid rgba(128,128,128,.35); }
   .pub-list .pub-item { padding-bottom: 1.1rem; margin-bottom: 1.1rem; border-bottom: 1px solid rgba(128,128,128,.15); }
@@ -71,12 +72,13 @@ images:
         {% for h in project.highlights %}<li>{{ h }}</li>{% endfor %}
       </ul>
       {% endif %}
-      {% if project.github or project.presentation or project.ongoing or project.submitted %}
+      {% if project.github or project.presentation or project.ongoing or project.submitted or project.accepted %}
       <div class="links">
         {% if project.github %}<a href="{{ project.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
         {% if project.presentation %}<a href="{{ project.presentation }}" target="_blank" rel="noopener noreferrer">View Presentation</a>{% endif %}
         {% if project.ongoing %}<span class="tag-ongoing">Ongoing</span>{% endif %}
         {% if project.submitted %}<span class="tag-submitted">Manuscript Submitted</span>{% endif %}
+        {% if project.accepted %}<span class="tag-accepted">Manuscript Accepted{% if project.accepted != true %} · {{ project.accepted }}{% endif %}</span>{% endif %}
       </div>
       {% endif %}
     </div>
