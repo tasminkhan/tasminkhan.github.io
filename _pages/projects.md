@@ -30,14 +30,15 @@ images:
   .card-list .media > figure img { max-width: 100%; max-height: 260px; width: auto; height: auto; background: #fff; padding: .5rem; border-radius: .4rem; }
   .card-list .meta { opacity: .75; font-size: .9rem; margin-bottom: .2rem; }
   .card-list .badges { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: .55rem; }
-  .card-list .badge-chip { display: inline-flex; border: 1px solid rgba(128,128,128,.4); border-radius: .3rem; font-size: .72rem; line-height: 1.5; overflow: hidden; }
-  .card-list .badge-chip .k { padding: .05rem .4rem; background: rgba(128,128,128,.15); opacity: .8; }
-  .card-list .badge-chip .v { padding: .05rem .4rem; }
+  .card-list .badge-chip { display: inline-flex; border: 1px solid rgba(128,128,128,.4); border-radius: .3rem; font-size: .8rem; line-height: 1.5; overflow: hidden; }
+  .card-list .badge-chip .k { padding: .12rem .5rem; background: rgba(128,128,128,.15); opacity: .8; }
+  .card-list .badge-chip .v { padding: .12rem .5rem; }
   .card-list .links { margin-top: .8rem; }
-  .card-list .links a { display: inline-block; margin-right: .5rem; padding: .25rem .7rem; border: 1px solid currentColor; border-radius: .35rem; font-size: .85rem; text-decoration: none; }
+  .card-list .links a { display: inline-block; margin-right: .5rem; padding: .22rem .6rem; border: 0; border-radius: .35rem; font-size: .8rem; font-weight: 600; text-decoration: none; color: #8e0787; box-shadow: inset 0 0 0 1.5px #8e0787; }
+  html[data-theme="dark"] .card-list .links a { color: #d27ccc; box-shadow: inset 0 0 0 1.5px #d27ccc; }
   .card-list .links a:hover { opacity: .7; }
   .card-list .links span { margin-right: .5rem; }
-  .card-list .links a.btn-presentation { padding: .22rem .6rem; border: 0; font-size: .8rem; font-weight: 600; background: #8e0787; color: #fff; }
+  .card-list .links a.btn-presentation, html[data-theme="dark"] .card-list .links a.btn-presentation { background: #8e0787; color: #fff; box-shadow: none; }
   .card-list .tag-ongoing { display: inline-block; padding: .22rem .6rem; border-radius: .35rem; font-size: .8rem; font-weight: 600; background: #e0a800; color: #000; }
   .card-list .tag-submitted { display: inline-block; padding: .22rem .6rem; border-radius: .35rem; font-size: .8rem; font-weight: 600; background: #2b6fa8; color: #fff; }
   .card-list .tag-accepted { display: inline-block; padding: .22rem .6rem; border-radius: .35rem; font-size: .8rem; font-weight: 600; background: #1f7a45; color: #fff; }

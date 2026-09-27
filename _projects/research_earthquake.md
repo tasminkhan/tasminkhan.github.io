@@ -29,5 +29,5 @@ slides:
   - assets/img/research/earthquake/version.png
   - assets/img/research/earthquake/versionversion.png
   - assets/img/research/earthquake/test.png
-# github: # TODO: add repository / live link later
+github: https://github.com/tasminkhan/Low-Cost-Seismic-Monitoring-Device
 ---

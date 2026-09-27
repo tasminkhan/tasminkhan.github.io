@@ -1,7 +1,7 @@
 ---
 title: AXI4-interconnect with weighted arbiter for fair SoC bandwidth distribution
-category: hardware
-importance: 5
+category: research
+importance: 4
 
 highlights:
   - AXI4 with independent write, read and response channel handling
