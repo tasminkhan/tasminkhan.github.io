@@ -19,7 +19,10 @@ highlights:
   - Weighted arbitration for fair and configurable SoC bandwidth distribution
 
 slides:
-  - assets/img/projects/axi/burstwriteslave.png
-  - assets/img/projects/axi/interconnectburst.png
+  - assets/img/research/axi/thumbnail.jpg
+  - assets/img/research/axi/traffic.jpg
+  - assets/img/research/axi/chip.png
+  - assets/img/research/axi/power.jpg
+  - assets/img/research/axi/row.jpg
 github: https://github.com/tasminkhan/AXI_interconnect
 ---
