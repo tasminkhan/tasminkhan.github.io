@@ -2,7 +2,7 @@
 title: Low-Cost Earthquake Monitoring & Early Warning
 category: research
 importance: 2
-accepted: "IEEE TIM 2026" # shows a "Manuscript Accepted · IEEE TIM 2026" tag
+paper: "https://doi.org/10.1109/TIM.2026.3743993" # shows a "Paper" button
 # Grey spec chips shown under the title: [label, value]
 badges:
   - ["unit cost", "<$150"]

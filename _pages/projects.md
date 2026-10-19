@@ -71,10 +71,11 @@ images:
         {% for h in project.highlights %}<li>{{ h }}</li>{% endfor %}
       </ul>
       {% endif %}
-      {% if project.github or project.presentation or project.ongoing or project.submitted or project.accepted %}
+      {% if project.github or project.presentation or project.ongoing or project.submitted or project.accepted or project.paper %}
       <div class="links">
         {% if project.accepted %}<span class="tag-accepted">Manuscript Accepted{% if project.accepted != true %} · {{ project.accepted }}{% endif %}</span>{% endif %}
         {% if project.submitted %}<span class="tag-submitted">Manuscript Submitted</span>{% endif %}
+        {% if project.paper %}<a href="{{ project.paper }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}
         {% if project.github %}<a href="{{ project.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
         {% if project.presentation %}<a class="btn-presentation" href="{{ project.presentation }}" target="_blank" rel="noopener noreferrer">Presentation</a>{% endif %}
         {% if project.ongoing %}<span class="tag-ongoing">Ongoing</span>{% endif %}

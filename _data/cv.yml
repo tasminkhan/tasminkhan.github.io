@@ -180,7 +180,8 @@ cv:
           - et al.
         publisher: IEEE Transactions on Instrumentation and Measurement
         releaseDate: 2026-05
-        summary: "Accepted for publication (2026)."
+        doi: 10.1109/TIM.2026.3743993
+        url: https://doi.org/10.1109/TIM.2026.3743993
 
       - title: "Development of Low-Cost Seismic Monitoring System for Field Application in Bangladesh"
         authors:
