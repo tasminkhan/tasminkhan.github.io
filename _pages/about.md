@@ -30,11 +30,10 @@ I'm currently seeking **PhD opportunities in Electrical and Computer Engineering
 
 **Research interests:**
 - Computer architecture
-- Hardware design (RTL, ASIC/VLSI)
+- Workload mapping & design space exploration
 - Hardware accelerators
 - Memory systems & interconnect
 - Processing-in-memory
 - Emerging memory
-- Workload mapping & design space exploration
+- Hardware design (RTL, ASIC/VLSI)
 - Hardware security
-- Energy-efficient edge AI
