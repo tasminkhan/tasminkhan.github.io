@@ -23,5 +23,6 @@ slides:
   - assets/img/research/axi/traffic.jpg
   - assets/img/research/axi/chip.png
   - assets/img/research/axi/row.jpg
+preprint: https://arxiv.org/abs/2611.12979
 github: https://github.com/tasminkhan/AXI_interconnect
 ---

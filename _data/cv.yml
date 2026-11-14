@@ -172,6 +172,34 @@ cv:
         awarder: "Ministry of Education, Bangladesh"
 
     Publications:
+      - title: "Open3DSRAM: An Open-Source Memory Compiler for 3D-SRAM Design in Advanced FinFET"
+        authors:
+          - Tanvir Hossain
+          - Fahim Shahriar Anim
+          - Tasmin Khan
+          - Tasnim Azad
+          - Nadim Chowdhury
+        publisher: "Submitted to Design Automation Conference (DAC) 2027"
+        releaseDate: 2026-11
+
+      - title: "Priority Aware Deficit Round-Robin Arbitration for Fair Per Bandwidth AXI4 Crossbar"
+        authors:
+          - Tasmin Khan
+          - Tishna Sabrina
+          - Ch. Md. Rakin Haider
+        publisher: "Submitted to Int'l Conf. on Electrical and Computer Engineering (ICECE)"
+        releaseDate: 2026-09
+        arxiv: "2611.12979"
+
+      - title: "A CNN Neuron for Always-On Near-Sensor Inference in 7-nm CNFET"
+        authors:
+          - Tasmin Khan
+          - Tanvir Hossain
+          - Md Hasib Ur Rashid
+          - Ahmed Zubair
+        publisher: "Submitted to Int'l Conf. on Electrical and Computer Engineering (ICECE)"
+        releaseDate: 2026-08
+
       - title: "Design and Development of Low-Cost Earthquake Monitoring System Based on MEMS Accelerometer"
         authors:
           - Tasmin Khan
@@ -179,7 +207,7 @@ cv:
           - Nilotpaul Kundu Dhrubo
           - et al.
         publisher: IEEE Transactions on Instrumentation and Measurement
-        releaseDate: 2026-05
+        releaseDate: 2026-09
         doi: 10.1109/TIM.2026.3743993
         url: https://doi.org/10.1109/TIM.2026.3743993
 

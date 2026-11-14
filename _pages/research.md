@@ -41,7 +41,7 @@ images:
   .card-list .tag-ongoing { display: inline-block; padding: .22rem .6rem; border-radius: .35rem; font-size: .8rem; font-weight: 600; background: #e0a800; color: #000; }
   .card-list .tag-submitted { display: inline-block; padding: .22rem .6rem; border-radius: .35rem; font-size: .8rem; font-weight: 600; background: #2b6fa8; color: #fff; }
   .card-list .tag-accepted { display: inline-block; padding: .22rem .6rem; border-radius: .35rem; font-size: .8rem; font-weight: 600; background: #1f7a45; color: #fff; }
-  .pub-list { margin-top: 2.5rem; }
+  .pub-list { margin-bottom: 2.5rem; }
   .pub-list h2 { padding-bottom: .4rem; border-bottom: 1px solid rgba(128,128,128,.35); }
   .pub-list .pub-item { padding-bottom: 1.1rem; margin-bottom: 1.1rem; border-bottom: 1px solid rgba(128,128,128,.15); }
   .pub-list .pub-item:last-child { border-bottom: 0; margin-bottom: 0; }
@@ -50,6 +50,21 @@ images:
   .pub-list .pub-venue { opacity: .7; font-size: .88rem; font-style: italic; margin-top: .15rem; }
   .pub-list .pub-summary { opacity: .8; font-size: .9rem; margin-top: .3rem; }
 </style>
+
+{% assign publications = site.data.cv.cv.sections.Publications %}
+{% if publications and publications != empty %}
+<div class="pub-list">
+<h2>Publications</h2>
+{% for p in publications %}
+<div class="pub-item">
+  <div class="pub-title">{{ p.title }}</div>
+  {% if p.authors %}<div class="pub-authors">{{ p.authors | join: ", " | replace: "Tasmin Khan", "<strong>Tasmin Khan</strong>" }}</div>{% endif %}
+  <div class="pub-venue">{{ p.publisher }}{% if p.releaseDate %} &middot; {{ p.releaseDate }}{% endif %}{% if p.arxiv %} &middot; <a href="https://arxiv.org/abs/{{ p.arxiv }}" target="_blank" rel="noopener noreferrer">arXiv:{{ p.arxiv }}</a>{% endif %}{% if p.doi %} &middot; DOI: <a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener noreferrer">{{ p.doi }}</a>{% endif %}</div>
+  {% if p.summary %}<div class="pub-summary">{{ p.summary }}</div>{% endif %}
+</div>
+{% endfor %}
+</div>
+{% endif %}
 
 <h2 class="section-head">Research</h2>
 <div class="card-list">
@@ -79,11 +94,12 @@ images:
         {% for h in project.highlights %}<li>{{ h }}</li>{% endfor %}
       </ul>
       {% endif %}
-      {% if project.github or project.presentation or project.ongoing or project.submitted or project.accepted or project.paper %}
+      {% if project.github or project.presentation or project.ongoing or project.submitted or project.accepted or project.paper or project.preprint %}
       <div class="links">
         {% if project.accepted %}<span class="tag-accepted">Manuscript Accepted{% if project.accepted != true %} · {{ project.accepted }}{% endif %}</span>{% endif %}
         {% if project.submitted %}<span class="tag-submitted">Manuscript Submitted</span>{% endif %}
         {% if project.paper %}<a href="{{ project.paper }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}
+        {% if project.preprint %}<a href="{{ project.preprint }}" target="_blank" rel="noopener noreferrer">Preprint</a>{% endif %}
         {% if project.github %}<a href="{{ project.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
         {% if project.presentation %}<a class="btn-presentation" href="{{ project.presentation }}" target="_blank" rel="noopener noreferrer">Presentation</a>{% endif %}
         {% if project.ongoing %}<span class="tag-ongoing">Ongoing</span>{% endif %}
@@ -93,18 +109,3 @@ images:
   </div>
 {% endfor %}
 </div>
-
-{% assign publications = site.data.cv.cv.sections.Publications %}
-{% if publications and publications != empty %}
-<div class="pub-list">
-<h2>Publications</h2>
-{% for p in publications %}
-<div class="pub-item">
-  <div class="pub-title">{{ p.title }}</div>
-  {% if p.authors %}<div class="pub-authors">{{ p.authors | join: ", " | replace: "Tasmin Khan", "<strong>Tasmin Khan</strong>" }}</div>{% endif %}
-  <div class="pub-venue">{{ p.publisher }}{% if p.releaseDate %} &middot; {{ p.releaseDate }}{% endif %}{% if p.doi %} &middot; DOI: <a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener noreferrer">{{ p.doi }}</a>{% endif %}</div>
-  {% if p.summary %}<div class="pub-summary">{{ p.summary }}</div>{% endif %}
-</div>
-{% endfor %}
-</div>
-{% endif %}

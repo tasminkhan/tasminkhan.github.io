@@ -9,10 +9,10 @@ meta:
   - "Apr 2026 – Present"
 highlights:
   - "Leading design development: authoring design specifications, delegating tasks, and designing RTL with testbenches including AMBA bus interconnect, memory controller and systolic array for GEMM operation"
-  - "Exploring sparsity-enabling architectures for inference hardware"
   - "Led training sessions teaching the research team SystemVerilog, hardware design, and testbench methodology"
+  - "Exploring ISA subsetting and on-core inference acceleration for domain-specific edge computing"
   - "Investigating limitations of existing datasets (VerilogDB, VeriCoder, RealBench) for industrial-scale designs"
-  - "Testing staged spec-to-RTL generation via intermediate representations to improve LLM design performance"
+  - "Testing staged spec-to-RTL generation with error localization"
 slides:
   - assets/img/research/rtl/thumbnail.png
 # github: # TODO: add repository / live link later
